@@ -5,3 +5,7 @@ from .forms import TOSInputForm
 class IndexView(generic.FormView):
     template_name = 'text_input/index.html'
     form_class = TOSInputForm
+    success_url = 'highlight/'
+
+class HighlightView(generic.TemplateView):
+    template_name = 'text_input/highlight.html'
