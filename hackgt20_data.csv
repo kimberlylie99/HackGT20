@@ -1,14 +1,15 @@
 Company,Sentiment,Text
 Google,Positive,Will not share Your Customer Data or any Third Party's Customer Data with any third parties unless Google has Your consent for any Customer Data or any Third Party's consent for the Third Party's Customer Data; 
 Google,Negative,"GOOGLE WILL NOT BE LIABLE FOR YOUR LOST REVENUES OR INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, EVEN IF GOOGLE OR ITS SUBSIDIARIES AND AFFILIATES HAVE BEEN ADVISED OF, KNEW OR SHOULD HAVE KNOWN THAT SUCH DAMAGES WERE POSSIBLE AND EVEN IF DIRECT DAMAGES DO NOT SATISFY A REMEDY. "
+Google,Negative,"You will indemnify, defend, and hold harmless Google at Your expense"
 Google,Positive,"Google will post notice of modifications to these terms at https://www.google.com/analytics/terms/, the Google Analytics Policies at www.google.com/analytics/policies/, or other policies referenced in these terms at the applicable URL for such policies. Changes will not apply retroactively and will become effective no sooner than 14 days after they are posted."
 Google,Negative,"GOOGLE'S TOTAL CUMULATIVE LIABILITY TO YOU OR ANY OTHER PARTY FOR ANY LOSS OR DAMAGES RESULTING FROM CLAIMS, DEMANDS, OR ACTIONS ARISING OUT OF OR RELATING TO THIS AGREEMENT WILL NOT EXCEED $500 "
 Google,Positive,will not share Your Customer Data or any Third Party's Customer Data with any third parties unless Google provides Customer Data in certain limited circumstances to third parties with strict restrictions that prevent the data from being used or shared except as directed by Google.
-Google,Negative,"We store the information we collect with unique identifiers tied to the browser, application, or device you’re using"
+Google,Negative,"We store the information we collect with unique identifiers tied to the browser, application, or device youre using"
 Google,Negative,"In some circumstances, Google also collects information about you from publicly accessible sources. "
 Google,Negative,"We use various technologies to collect and store information, including cookies, pixel tags, local storage, such as browser web storage or application data caches, databases, and server logs"
-Google,Positive,"We don’t show you personalized ads based on sensitive categories, such as race, religion, sexual orientation, or health."
-Google,Positive,"We don’t share information that personally identifies you with advertisers, such as your name or email."
+Google,Positive,"We dont show you personalized ads based on sensitive categories, such as race, religion, sexual orientation, or health."
+Google,Positive,"We dont share information that personally identifies you with advertisers, such as your name or email."
 Amazon,Negative,"We may also use device identifiers, cookies, and other technologies on devices, applications, and our web pages to collect browsing, usage, or other technical information."
 Reddit,Negative,"Log information when you use and access the Services. For example, IP address, user-agent string, browser type, operating system, referral URLs, device information, device settings, pages visited, links clicked, the requested URL, and search terms. "
 Reddit,Positive,We also enforce technical and administrative access controls to limit which of our employees have access to nonpublic personal information.
@@ -24,6 +25,13 @@ Facebook,Negative,"We receive and analyze content, communications and informatio
 Facebook,Negative,"We collect information about the people, Pages, accounts, hashtags and groups you are connected to and how you interact with them across our Products"
 Facebook,Negative,We also receive information about your online and offline actions and purchases from third-party data providers who have the rights to provide us with your information.
 Facebook,Positive," If we introduce face-recognition technology to your Instagram experience, we will let you know first, and you will have control over whether we use this technology for you."
-Facebook,Positive,"We don’t sell your personal data to advertisers, and we don’t share information that directly identifies you (such as your name, email address or other contact information) with advertisers unless you give us specific permission"
+Facebook,Positive,"We don't sell your personal data to advertisers, and we don' share information that directly identifies you (such as your name, email address or other contact information) with advertisers unless you give us specific permission"
 Facebook,Negative,"If we determine that you have clearly, seriously or repeatedly breached our Terms or Policies, including in particular our Community Standards, we may suspend or permanently disable access to your account"
-Facebook,Positive,"Where we take such action we’ll let you know and explain any options you have to request a review,"
+Facebook,Positive,"Where we take such action we'll let you know and explain any options you have to request a review,"
+UrbanDict,Negative,"You agree to indemnify, defend, and hold harmless the Company, its officers, directors, employees, and agents from and against any and all claims,"
+UrbanDict,Negative,We use third-party advertising companies to serve ads
+UrbanDict,Negative,"your submissions and their contents will automatically become the property of Urban Dictionary, without any compensation to you"
+Khan,Negative,"We may send you email regarding our products and services, or other third party products and services."
+Khan,Negative,the removal of your content or information does not ensure complete or comprehensive removal
+Khan,Positive,Khan Academy does not display any third party advertisements on the Service.
+Khan,Negative,"�Uses a variety of tracking technologies, including cookies, web beacons"
