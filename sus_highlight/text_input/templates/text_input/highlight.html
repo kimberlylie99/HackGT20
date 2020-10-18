@@ -9,7 +9,7 @@
 <p>
     {% for dict in request.session.tos_list_of_dicts %}
         {% if dict.bad %}
-            <mark>{{ dict.text }}</mark>
+            <mark style="background-color: yellow">{{ dict.text }}</mark>
         {% else %}
             {{ dict.text }}
         {% endif %}
