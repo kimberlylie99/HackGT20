@@ -1,4 +1,3 @@
-
 {% extends './base.html' %}
 
 {% block content %}
@@ -7,6 +6,14 @@
   Please review the highlighted areas.
 </div>
 
-<p>{{ request.session.terms_of_service }}<p>
+<p>
+    {% for dict in request.session.tos_list_of_dicts %}
+        {% if dict.bad %}
+            <mark style="background-color: yellow">{{ dict.text }}</mark>
+        {% else %}
+            {{ dict.text }}
+        {% endif %}
+    {% endfor %}
+<p>
 
 {% endblock %}
