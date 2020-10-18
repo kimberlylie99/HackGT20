@@ -1,13 +1,11 @@
 {% extends './base.html' %}
 
 {% block content %}
-    
     <form method="post">{% csrf_token %}
         <div class="form-group form-check">
             {{ form.as_p }}
         </div>
         <button type="submit" class="btn btn-primary btn-lg btn-block">Check for Sus</button>
-
     </form>
 
 {% endblock %}
