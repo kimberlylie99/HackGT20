@@ -11,3 +11,7 @@ For the backend algorithm, we are using Python’s open source libraries: scikit
  
 ## Challenges we ran into
 In the backend, the team was not an expert with natural language processing, so there were many challenges when it comes to understanding how machine learning is able to comprehend which words are considered to have a positive or a negative connotation. Because we weren’t experienced in this topic, the debugging process was long and tedious as we had to familiarize ourselves with the functions provided in the Python libraries.
+
+## Example Output
+
+![](suspicious.png)
