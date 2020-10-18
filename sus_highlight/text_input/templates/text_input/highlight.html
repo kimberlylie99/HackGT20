@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 {% extends './base.html' %}
 
@@ -10,3 +11,21 @@
 <p>{{ request.session.terms_of_service }}<p>
 
 {% endblock %}
+=======
+<!DOCTYPE HTML>
+
+<html>
+    <body>
+        <h1>This is the highlight page</h1>
+        <p>
+            {% for dict in request.session.tos_list_of_dicts %}
+                {% if dict.bad %}
+                    <mark>{{ dict.text }}</mark>
+                {% else %}
+                    {{ dict.text }}
+                {% endif %}
+            {% endfor %}
+        <p>
+    </body>
+</html>
+>>>>>>> preprocessing
