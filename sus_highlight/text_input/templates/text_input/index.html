@@ -1,34 +1,11 @@
 {% extends './base.html' %}
 
 {% block content %}
-<!-- <style>
-    input {
-        color: yellow;
-        background: gray;
-        width: 200px;
-        height: 50px;
-        font-size: large;
-    }
-    .content {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-</style> -->
-
-
-    
     <form method="post">{% csrf_token %}
         <div class="form-group form-check">
             {{ form.as_p }}
         </div>
-<!--             <input type="submit" value="Check for Sus">
--->        
-
         <button type="submit" class="btn btn-primary btn-lg btn-block">Check for Sus</button>
-
     </form>
 
 {% endblock %}
