@@ -1,6 +1,7 @@
-<!DOCTYPE HTML>
+{% extends './base.html' %}
 
-<style>
+{% block content %}
+<!-- <style>
     input {
         color: yellow;
         background: gray;
@@ -15,16 +16,19 @@
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
-</style>
+</style> -->
 
-<html>
-<body>
-    <div class="content">
-        <h1>Sus Highlight</h1>
-        <form method="post">{% csrf_token %}
+
+    
+    <form method="post">{% csrf_token %}
+        <div class="form-group form-check">
             {{ form.as_p }}
-            <input type="submit" value="Check for Sus">
-        </form>
-    </div>
-</body>
-</html>
+        </div>
+<!--             <input type="submit" value="Check for Sus">
+-->        
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Check for Sus</button>
+
+    </form>
+
+{% endblock %}

@@ -1,8 +1,12 @@
-<!DOCTYPE HTML>
 
-<html>
-    <body>
-        <h1>This is the highlight page</h1>
-        <p>{{ request.session.terms_of_service }}<p>
-    </body>
-</html>
+{% extends './base.html' %}
+
+{% block content %}
+
+<div class="alert alert-success" role="alert">
+  Please review the highlighted areas.
+</div>
+
+<p>{{ request.session.terms_of_service }}<p>
+
+{% endblock %}
