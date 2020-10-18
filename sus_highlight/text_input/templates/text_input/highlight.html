@@ -1,8 +1,19 @@
-<!DOCTYPE HTML>
+{% extends './base.html' %}
 
-<html>
-    <body>
-        <h1>This is the highlight page</h1>
-        <p>{{ request.session.terms_of_service }}<p>
-    </body>
-</html>
+{% block content %}
+
+<div class="alert alert-success" role="alert">
+  Please review the highlighted areas.
+</div>
+
+<p>
+    {% for dict in request.session.tos_list_of_dicts %}
+        {% if dict.bad %}
+            <mark style="background-color: yellow">{{ dict.text }}</mark>
+        {% else %}
+            {{ dict.text }}
+        {% endif %}
+    {% endfor %}
+<p>
+
+{% endblock %}

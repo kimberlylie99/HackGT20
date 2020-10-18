@@ -1,0 +1,74 @@
+
+#inputTextArea {
+	height: 500px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+body {
+/*	background-color: #DCDCDC;
+*/
+	background: rgb(54,170,247);
+	background: radial-gradient(circle, rgba(54,170,247,1) 12%, rgba(220,220,220,1) 100%);
+}
+
+.page-header {
+    background-color: #007acc;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+    text-align: center;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4, button {
+    font-family: 'Helvetica', 'Times New Roman';
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a, .post h2 a:visited {
+    color: #000000;
+}
