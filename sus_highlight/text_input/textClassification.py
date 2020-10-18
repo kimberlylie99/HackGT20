@@ -1,6 +1,7 @@
 import numpy as np 
 import pandas as pd 
 import re
+import os
 import nltk 
 import matplotlib.pyplot as plt
 import urllib
@@ -39,7 +40,9 @@ def processFeatures(features):
     
 
 def getClass(stringList):
-    company_review = pd.read_csv(".\hackgt20_data.csv", encoding='windows-1252')
+    THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+    my_file = os.path.join(THIS_FOLDER, 'hackgt20_data.csv')
+    company_review = pd.read_csv(my_file, encoding='windows-1252')
     company_review.head()
     features = company_review.iloc[:, 2].values
     labels = company_review.iloc[:, 1].values

@@ -2,12 +2,7 @@ from django.views import generic
 from django.urls import reverse_lazy
 from .forms import TOSInputForm
 import re
-
-pretend_list_of_dictionaries = [
-    {"text": "This is a good string.", "bad": False},
-    {"text": "This is a bad string.", "bad": True},
-    {"text": "This is another good string.", "bad": False}
-]
+from . import textClassification
 
 def create_clean_list_of_strings(s):
     # Replace newlines with spaces
@@ -30,9 +25,9 @@ class IndexView(generic.FormView):
     success_url = reverse_lazy('text_input:highlight')
 
     def form_valid(self, form):
-        # Temporarily comment out input from user
-        # list_of_strings = create_clean_list_of_strings(form.cleaned_data['terms_of_service'])
-        self.request.session['tos_list_of_dicts'] = pretend_list_of_dictionaries
+        list_of_strings = create_clean_list_of_strings(form.cleaned_data['terms_of_service'])
+        list_of_dictionaries = textClassification.getClass(list_of_strings)
+        self.request.session['tos_list_of_dicts'] = list_of_dictionaries 
         return super().form_valid(form)
 
 class HighlightView(generic.TemplateView):
